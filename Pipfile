@@ -3,6 +3,14 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[scripts]
+dev = "python manage.py runserver"
+startapp = "python manage.py startapp"
+makemigrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+shell = "python manage.py shell"
+db = "python manage.py dbshell"
+
 [packages]
 django = "*"
 
