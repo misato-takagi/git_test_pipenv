@@ -4,3 +4,8 @@ from django.views.generic import DeleteView
 
 class DeleteHosView(DeleteView):
     template_name: str = 'delete.html'
+from django.views.generic import TemplateView
+
+# Create your views here.
+class IndexView(TemplateView):
+    template_name: str = 'index.html'
